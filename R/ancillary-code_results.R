@@ -64,8 +64,8 @@ plot_grid3d <- function(embs_list, dist_list = NULL, color = NULL, ncol = 5, par
                      yaxt = 'n'
       )
       if (!missing(ylim2)) {
+        y_count <- 1
         if (i %in% ylim2$pos) {
-          y_count <- 1
           args2d <- c(args2d, list(ylim = c(ylim2$vals1[y_count],
                                             c(ylim2$vals2[y_count]))))
           y_count <- y_count + 1
