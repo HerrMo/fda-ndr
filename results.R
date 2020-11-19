@@ -12,9 +12,9 @@ source("R/setup.R")
 
 mds_lin <- l_embs_lin[str_detect(names(l_embs_lin), "mds")][c(1, 5, 9, 13, 17, 21)]
 umap_lin <- l_embs_lin[str_detect(names(l_embs_lin), "umap")][c(1, 5, 9, 13, 17, 21)]
-tsne_lin <- l_embs_lin[str_detect(names(l_embs_lin), "tsne")][c(4, 6, 9, 13, 17, 21)] # 21 with 320° and 13 with 160°
-imap_lin <- l_embs_lin[str_detect(names(l_embs_lin), "isomap")][c(1, 5, 9, 13, 17, 21)] # 17 with 50°
-dmap_lin <- l_embs_lin[str_detect(names(l_embs_lin), "dmap")][c(1, 5, 11, 13, 19, 21)] # 19 with 280° and 21 with 260°
+tsne_lin <- l_embs_lin[str_detect(names(l_embs_lin), "tsne")][c(4, 6, 9, 13, 17, 21)]
+imap_lin <- l_embs_lin[str_detect(names(l_embs_lin), "isomap")][c(1, 5, 9, 13, 17, 21)]
+dmap_lin <- l_embs_lin[str_detect(names(l_embs_lin), "dmap")][c(1, 5, 11, 13, 19, 21)]
 lin_embs <- c(mds_lin, umap_lin, tsne_lin, imap_lin, dmap_lin)
 
 plot_grid3d(lin_embs,
@@ -50,7 +50,7 @@ for (i in 1:5) mtext(nic_settings[-c(1:6)][i], line = 1, font = 2, outer = TRUE,
 
 
 ### other embeddings for nonlinear settings
-# for outer margin annotations of methods and settings run 'annotation' (l 88)
+# for outer margin annotations of methods and settings run 'annotation'
 
 # Fig 5 A
 # 3d plots for nonlinear settings based on parameter space optimization via AUC-dir
