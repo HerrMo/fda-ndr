@@ -141,28 +141,6 @@ for (mea in meas) {
   }
 }
 
-# for (mea in meas) {
-#   set.seed(1)
-#   for (mtr in metric[3:4]) {
-#     if (mea == "auc_rnx") {
-#       meta_dat <- if (mtr == "fs_dist") ": $AUC^{euc}_{Rnx} -" else ": $AUC^{geo}_{Rnx} -"
-#     } else {
-#       meta_dat <- if (mtr == "fs_dist") ": $Q_{local}^{euc} -" else ": $Q_{local}^{geo} -"
-#     }
-#     meta_dat <- sapply(meths2, function(x) paste0(x, meta_dat))
-#
-#     opt_perf_vals <- sapply(meths2, get_opt_val, mea = mea, space = mtr, data = res_eq)
-#     for (i in 1:5) {
-#       meta_dat[i] <- paste0(meta_dat[i], round(opt_perf_vals[i], 2))
-#     }
-#
-#     opt_params <- sapply(meths2, get_opt_entry, mea = mea, space = mtr, data = res_eq)
-#     opt_embs <- lapply(opt_params, function(x) do.call(embedding_algo,
-#                                                c(list(dist_obj = eq_l2), x[,-c(1:3)])))
-#     names(opt_embs) <- meta_dat
-#     l_embs_earthquake <- c(l_embs_earthquake, opt_embs)
-#   }
-# }
 
 #####################                   #####################
 #####################     COIL data     #####################
