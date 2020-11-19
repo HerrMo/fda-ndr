@@ -1,9 +1,5 @@
 source("R/setup.R")
 
-load("data/embs_nonlinear.RData")
-load("data/embs_linear.RData")
-
-
 # Fig 1
 # fda ndr framework
 
