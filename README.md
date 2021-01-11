@@ -1,6 +1,6 @@
 # Unsupervised Functional Data Analysis via Nonlinear Dimension Reduction
 
-Repository contains material to reproduce the results of 'Unsupervised Functional Data Analysis via Nonlinear Dimension Reduction".
+Repository contains material to reproduce the results of 'Unsupervised Functional Data Analysis via Nonlinear Dimension Reduction'(https://arxiv.org/abs/2012.11987).
 
 To reproduce the results (Figures & Tables), run script "results.R". Make sure, all packages listed in "setup.R" in folder R are installed.
 
